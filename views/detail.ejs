@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>详情页</title>
+  <%-include('head',{})%>
+</head>
+<body>
+
+  <%-include('bar',{username:data.username})%>
+  
+
+  <div class="detail">
+    <div class="title"><%=data.title%></div>
+    <div class='desc'>
+      <span><%=data.author%></span>
+      <span>发布时间：<%=data.setTime%></span>
+    </div>
+    <div class="content"><%=data.content%></div>
+  </div>
+
+</body>
+</html>
